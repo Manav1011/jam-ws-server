@@ -24,7 +24,7 @@ async def remove_from_dict(websocket: WebSocket):
 async def root():
     return JSONResponse(content={"message": "WebSocket server running"})
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health_check():
     return JSONResponse(content={"status": "ok"})
 
