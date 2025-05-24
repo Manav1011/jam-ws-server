@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: websocket-app
     env: python
     plan: free
